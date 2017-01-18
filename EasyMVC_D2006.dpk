@@ -1,0 +1,68 @@
+package EasyMVC_D2006;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 1}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA OFF}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$DEFINE MENUDEBUG}
+{$DEFINE INFODEBUG}
+{$DEFINE MENUDEBUG}
+{$DEFINE INFODEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'Easy MVC 1.0a'}
+{$DESIGNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  vcl,
+  rtl,
+  vclie,
+  designide,
+  vcljpg,
+  xmlrtl,
+  vclactnband,
+  vclx;
+
+contains
+  NewMVCSetWizard in 'NewMVCSetWizard.pas',
+  ProjectCreator in 'ProjectCreator.pas',
+  DataModuleCreator in 'DataModuleCreator.pas',
+  BaseCreator in 'BaseCreator.pas',
+  FrameCreator in 'FrameCreator.pas',
+  FileCreator in 'FileCreator.pas',
+  logger in 'logger.pas',
+  toolBox in 'toolBox.pas',
+  copyfileform in 'copyfileform.pas' {FormCopyFile},
+  shadow in 'shadow.pas',
+  ViewCreator in 'ViewCreator.pas',
+  ControllerCreator in 'ControllerCreator.pas',
+  ModelCreator in 'ModelCreator.pas',
+  ProjectFileCreator in 'ProjectFileCreator.pas',
+  AppWizardForm in 'AppWizardForm.pas' {FormAppWizard},
+  NewProjectWizard in 'NewProjectWizard.pas',
+  NewSetForm in 'NewSetForm.pas' {FormNewSet},
+  Patterns in 'Patterns.pas',
+  OTAUtilities in 'OTAUtilities.pas';
+
+end.
+
